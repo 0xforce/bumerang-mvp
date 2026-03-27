@@ -1,0 +1,814 @@
+{
+  "WorkspaceSetup": {
+    "brand": "Bumerang",
+    "title": "Crea Tu Espacio",
+    "subtitle": "Configura tu cuenta para comenzar a enviar pagos transfronterizos.",
+    "entityType": "Soy...",
+    "individual": "Individual",
+    "business": "Empresa",
+    "name": "Nombre del Espacio",
+    "namePlaceholder": "Acme Holdings S.A.",
+    "cta": "Crear Espacio",
+    "creating": "Creando…",
+    "successToast": "Espacio creado. Bienvenido.",
+    "errorToast": "No se pudo crear el espacio.",
+    "errors": {
+      "tooShort": "El nombre debe tener al menos 2 caracteres"
+    }
+  },
+  "Common": {
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "areYouSure": "¿Estás seguro?",
+    "actionIrreversible": "Esta acción no se puede deshacer."
+  },
+  "AdminPortal": {
+    "compliance": {
+      "title": "Mesa de Cumplimiento",
+      "subtitle": "Revisa y gestiona las presentaciones de KYC/KYB.",
+      "empty": "No se encontraron perfiles.",
+      "unknownOrganization": "Desconocida",
+      "review": "Revisar",
+      "forceApprove": "Aprobar Forzosamente",
+      "forceReject": "Rechazar Forzosamente",
+      "table": {
+        "organization": "Organización",
+        "status": "Estado",
+        "lastUpdated": "Última actualización",
+        "action": "Acción"
+      },
+      "sheet": {
+        "description": "Revisa los datos de cumplimiento y toma la decisión final.",
+        "currentStatus": "Estado actual:",
+        "rawPayload": "Carga sin procesar",
+        "noRawPayload": "No hay carga sin procesar disponible.",
+        "rejectionReasons": "Motivos de rechazo",
+        "none": "Ninguno"
+      },
+      "filters": {
+        "ALL": "TODO",
+        "PENDING": "PENDIENTE",
+        "PROCESSING": "EN PROCESO",
+        "MANUAL_REVIEW": "REVISIÓN MANUAL",
+        "ERROR": "ERROR",
+        "APPROVED": "APROBADO",
+        "REJECTED": "RECHAZADO"
+      },
+      "statuses": {
+        "PENDING": "PENDIENTE",
+        "PROCESSING": "EN PROCESO",
+        "MANUAL_REVIEW": "REVISIÓN MANUAL",
+        "ERROR": "ERROR",
+        "APPROVED": "APROBADO",
+        "REJECTED": "RECHAZADO"
+      },
+      "toasts": {
+        "approveSuccess": "Perfil aprobado correctamente",
+        "approveError": "No se pudo aprobar",
+        "rejectSuccess": "Perfil rechazado correctamente",
+        "rejectError": "No se pudo rechazar"
+      }
+    },
+    "users": {
+      "title": "Acceso de usuarios",
+      "subtitle": "Una fila por persona. Revoca solo el espacio de trabajo que elijas; el historial de auditoría se conserva.",
+      "colEmail": "Correo",
+      "colInternalRole": "Rol interno",
+      "colWorkspaces": "Espacios de trabajo",
+      "colMemberSince": "Primera alta",
+      "userCount": "{count, plural, one {# usuario} other {# usuarios}}",
+      "joined": "Alta {date}",
+      "revokeAria": "Revocar acceso a {organization}",
+      "revokeTitle": "Revocar acceso al espacio",
+      "revokeDescription": "¿Quitar a {email} de {organization}? Pierde solo ese espacio; el historial del libro mayor se conserva.",
+      "searchPlaceholder": "Filtrar por correo…",
+      "emptyFilter": "Ningún usuario coincide con el filtro.",
+      "emptyAll": "No hay membresías de espacio.",
+      "copyEmail": "Copiar correo",
+      "copied": "Copiado",
+      "revoke": "Revocar",
+      "revoking": "Revocando…",
+      "revokeSuccess": "Acceso al espacio revocado",
+      "roleUpdated": "Rol interno actualizado",
+      "actionFailed": "La acción falló",
+      "selectRole": "Seleccionar rol",
+      "roles": {
+        "customer": "cliente",
+        "support": "soporte",
+        "operations": "operaciones",
+        "compliance": "cumplimiento",
+        "super_admin": "super admin"
+      }
+    }
+    ,
+    "system": {
+      "title": "Salud del Sistema",
+      "subtitle": "Supervisa fallos de entrega y eventos del sistema de alto nivel.",
+      "tabs": {
+        "failures": "Fallos de Entrega",
+        "events": "Eventos del Sistema"
+      },
+      "failures": {
+        "empty": "No hay entregas fallidas.",
+        "unknownError": "Error desconocido",
+        "never": "Nunca",
+        "retry": "Reintentar",
+        "table": {
+          "channel": "Canal",
+          "destination": "Destino",
+          "error": "Error",
+          "lastAttempt": "Último intento",
+          "action": "Acción"
+        }
+      },
+      "events": {
+        "empty": "No se encontraron eventos del sistema.",
+        "system": "Sistema",
+        "table": {
+          "eventType": "Tipo de evento",
+          "organizationId": "ID de organización",
+          "createdAt": "Creado el"
+        }
+      },
+      "toasts": {
+        "retrySuccess": "Entrega en cola para reintento",
+        "retryError": "No se pudo reintentar la entrega"
+      }
+    },
+    "invites": {
+      "title": "Invitar a un Usuario",
+      "subtitle": "Envía un enlace de invitación seguro. El destinatario establecerá su propia contraseña.",
+      "emailPlaceholder": "colleague@company.com",
+      "sending": "Enviando…",
+      "sendInvite": "Enviar invitación",
+      "pendingTitle": "Invitaciones pendientes de la plataforma",
+      "pendingCount": "{count} pendientes",
+      "emptyPending": "No hay invitaciones pendientes de la plataforma.",
+      "revokePlatformAccess": "Revocar acceso de la plataforma",
+      "table": {
+        "email": "Correo",
+        "createdAt": "Creado el",
+        "actions": "Acciones"
+      },
+      "toasts": {
+        "revokeSuccess": "Invitación de plataforma revocada",
+        "revokeError": "No se pudo revocar la invitación de la plataforma"
+      }
+    },
+    "ledger": {
+      "title": "Libro Mayor",
+      "subtitle": "Marcador de posición para operaciones internas del libro mayor.",
+      "empty": "La funcionalidad del libro mayor estará disponible pronto."
+    },
+    "overview": {
+      "title": "Resumen del Admin",
+      "subtitle": "Página de resumen en blanco. Agrega widgets y métricas aquí a continuación.",
+      "empty": "Aún no hay datos del resumen."
+    }
+  },
+  "DevTools": {
+    "testUtilities": "Probar utilidades",
+    "confirmTitle": "¿Iniciar secuencia de prueba?",
+    "confirmDescription": "Confirma para disparar un toast de éxito y verificar que el stack esté configurado correctamente.",
+    "successToast": "Utilidades confirmadas. Toast + modal activos.",
+    "successToastDescription": "Ambos sistemas están correctamente configurados en la app."
+  },
+  "Index": {
+    "title": "Bienvenido a Bumerang",
+    "cta": "Comenzar"
+  },
+  "Login": {
+    "brand": "Bumerang",
+    "title": "Iniciar sesión",
+    "subtitle": "El acceso es solo por invitación.",
+    "errorBannerTitle": "Acceso restringido",
+    "closedBetaNotice": "Esta aplicación está actualmente en beta cerrada. Solo las direcciones de correo invitadas explícitamente pueden iniciar sesión.",
+    "googleSignIn": "Iniciar sesión con Google",
+    "or": "o",
+    "emailPlaceholder": "Correo electrónico",
+    "passwordPlaceholder": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "signingIn": "Iniciando sesión…",
+    "signIn": "Iniciar sesión"
+  },
+  "ResetPassword": {
+    "brand": "Bumerang",
+    "title": "Restablecer contraseña",
+    "subtitle": "Ingresa tu correo electrónico y te enviaremos un enlace de restablecimiento.",
+    "backToSignIn": "Volver a iniciar sesión",
+    "emailPlaceholder": "Correo electrónico",
+    "sending": "Enviando…",
+    "sendResetLink": "Enviar enlace de restablecimiento"
+  },
+  "UpdatePassword": {
+    "brand": "Bumerang",
+    "title": "Establecer contraseña",
+    "subtitle": "Elige una contraseña segura para tu cuenta.",
+    "newPasswordPlaceholder": "Nueva contraseña (mín. 8 caracteres)",
+    "confirmPasswordPlaceholder": "Confirmar contraseña",
+    "saving": "Guardando…",
+    "setPasswordAndContinue": "Establecer contraseña y continuar"
+  },
+  "Nav": {
+    "dashboard": "Inicio",
+    "account": "Mi Cuenta",
+    "counterparties": "Contrapartes",
+    "transactions": "Transacciones",
+    "settings": "Configuración",
+    "education": "Educación",
+    "notifications": "Notificaciones",
+    "aiAssistant": "Asistente IA",
+    "toggleSidebar": "Alternar barra lateral",
+    "sidebarControl": "Control lateral",
+    "sidebarExpanded": "Expandido",
+    "sidebarCollapsed": "Contraído",
+    "sidebarHover": "Expandir al pasar",
+    "adminCompliance": "Cumplimiento",
+    "adminLedger": "Libro Mayor",
+    "adminUsers": "Usuarios",
+    "adminSystem": "Sistema",
+    "adminInvites": "Invitaciones",
+    "adminShell": "Admin",
+    "adminMenu": "Administración",
+    "shellSwitcherAria": "Cambiar entre app y administración"
+  },
+  "Theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "toggle": "Tema"
+  },
+  "Language": {
+    "en": "English",
+    "es": "Español",
+    "toggle": "Cambiar idioma"
+  },
+  "OrgSwitcher": {
+    "searchPlaceholder": "Buscar organización...",
+    "noResults": "Ninguna organización coincide con tu búsqueda.",
+    "allOrgs": "Todas las organizaciones",
+    "newOrg": "Nueva organización",
+    "modalTitle": "Crear un nuevo espacio de trabajo",
+    "modalDescription": "Los mismos datos que en el registro — serás administrador de esta organización.",
+    "workspaceSettings": "Ajustes del espacio de trabajo",
+    "settingsTooltip": "Ajustes",
+    "verification": {
+      "UNVERIFIED": "Sin iniciar",
+      "PENDING": "Recibido",
+      "PROCESSING": "Revisión previa",
+      "SHUFTI_APPROVED": "Activación final",
+      "APPROVED": "Aprobado",
+      "REJECTED": "Requiere atención"
+    }
+  },
+  "User": {
+    "signOut": "Cerrar sesión",
+    "profile": "Perfil",
+    "viewProfile": "Ver perfil"
+  },
+  "SidebarPromo": {
+    "unverifiedTitle": "Acción Requerida",
+    "unverifiedDesc": "Completa tu perfil para desbloquear todas las funciones.",
+    "verifyNow": "Verificar Ahora",
+    "pendingTitle": "En Revisión",
+    "pendingDesc": "Tu verificación está en curso.",
+    "rejectedTitle": "Problema de verificación",
+    "rejectedDesc": "No pudimos completar la verificación. Revisa tu cuenta para más detalles.",
+    "reviewAccount": "Ver cuenta",
+    "verifiedTitle": "Novedades",
+    "verifiedDesc": "Las billeteras de criptomonedas ya están disponibles. Comienza a transaccionar en USDT hoy."
+  },
+  "Account": {
+    "devState": "Estado Dev:",
+    "devReset": "Restablecer",
+    "Onboarding": {
+      "title": "Completa tu Perfil",
+      "subtitle": "Necesitamos algunos detalles para verificar tu identidad y activar tu cuenta.",
+      "individual": "Individual",
+      "business": "Empresa",
+
+      "steps": {
+        "kyc": {
+          "step1": "Personal",
+          "step2": "Dirección",
+          "step3": "Identidad",
+          "step4": "Documentos"
+        },
+        "kyb": {
+          "step1": "Empresa",
+          "step2": "Dirección",
+          "step3": "Propiedad",
+          "step4": "Documentos"
+        }
+      },
+
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "dob": "Fecha de Nacimiento",
+      "phone": "Número de Teléfono",
+      "phoneHint": "Incluye el código de país, ej. +52 55 1234 5678",
+      "nationality": "Nacionalidad",
+      "street": "Dirección",
+      "city": "Ciudad",
+      "stateProvince": "Estado / Provincia",
+      "postalCode": "Código Postal",
+      "country": "País",
+      "documentType": "Tipo de Documento",
+      "documentNumber": "Número de Documento",
+      "documentCountry": "País del Documento",
+
+      "passport": "Pasaporte",
+      "nationalId": "Cédula Nacional",
+      "driversLicense": "Licencia de Conducir",
+
+      "legalName": "Razón Social",
+      "entityType": "Tipo de Entidad",
+      "incorporationDate": "Fecha de Constitución",
+      "registrationNumber": "Número de Registro",
+      "countryOfIncorporation": "País de Constitución",
+
+      "llc": "LLC",
+      "ltd": "LTD",
+      "corp": "Corporación",
+      "sa": "S.A.",
+      "sas": "S.A.S.",
+      "gmbh": "GmbH",
+      "bv": "B.V.",
+      "other": "Otro",
+
+      "uboSectionLabel": "Beneficiario Final (UBO)",
+      "uboName": "Nombre Legal Completo",
+      "uboFirstName": "Nombre del UBO",
+      "uboLastName": "Apellido del UBO",
+      "uboDob": "Fecha de Nacimiento",
+      "uboDocumentType": "Tipo de Documento del UBO",
+      "uboDocumentNumber": "Número de Documento del UBO",
+      "uboDocumentCountry": "País del Documento del UBO",
+      "uboNationalId": "Cédula / Número de Pasaporte",
+      "uboAddress": "Dirección Residencial",
+
+      "documents": {
+        "idFront": "Frente de Identificación",
+        "idFrontHint": "Cédula, Pasaporte, ID Nacional (máx. 5MB)",
+        "idBack": "Reverso de Identificación (Opcional)",
+        "idBackHint": "Requerido para Cédula / ID Nacional",
+        "selfie": "Selfie",
+        "selfieHint": "Una foto clara de tu rostro",
+        "poa": "Comprobante de Domicilio",
+        "poaHint": "Factura de Servicios / Extracto Bancario (máx. 5MB)",
+        "incorporationDoc": "Documento de Constitución",
+        "incorporationDocHint": "Certificado de Incorporación / Cámara de Comercio (máx. 5MB)",
+        "uboIdFront": "Frente de Identificación del UBO",
+        "uboIdFrontHint": "Cédula, Pasaporte, ID Nacional (máx. 5MB)",
+        "uboIdBack": "Reverso de Identificación del UBO (Opcional)",
+        "uboIdBackHint": "Requerido para Cédula / ID Nacional",
+        "uboSelfie": "Selfie del UBO",
+        "uboSelfieHint": "Una foto clara del rostro del UBO",
+        "uboPoa": "Comprobante de Domicilio del UBO",
+        "uboPoaHint": "Factura de Servicios / Extracto Bancario (máx. 5MB)"
+      },
+
+      "selectDate": "Selecciona una fecha",
+      "selectCountry": "Selecciona un país",
+      "selectDocumentType": "Selecciona tipo de documento",
+      "selectEntityType": "Selecciona tipo de entidad",
+
+      "nextStep": "Siguiente Paso",
+      "previous": "Atrás",
+      "submit": "Enviar para Verificación",
+      "submitting": "Enviando…",
+
+      "successToastTitle": "Verificación Enviada",
+      "successToastDesc": "Tu perfil está ahora en revisión.",
+      "errorToastTitle": "Error de Envío",
+
+      "errors": {
+        "required": "Este campo es obligatorio",
+        "tooShort": "Debe tener al menos 2 caracteres",
+        "invalidDate": "Ingresa una fecha pasada válida",
+        "futureDate": "La fecha no puede ser futura",
+        "usaNotPermitted": "Estados Unidos no es una jurisdicción admitida",
+        "invalidPhone": "Ingresa un número de teléfono válido con código de país",
+        "mustBeAdult": "Debes tener al menos 18 años"
+      },
+      "rejection": {
+        "actionRequired": "Acción requerida"
+      },
+      "placeholders": {
+        "shared": {
+          "documentNumber": "A12345678"
+        },
+        "individual": {
+          "firstName": "Juan",
+          "lastName": "Pérez",
+          "phone": "+1 234 567 8900",
+          "street": "123 Calle Principal",
+          "city": "Londres",
+          "stateProvince": "Gran Londres",
+          "postalCode": "EC1A 1BB"
+        },
+        "business": {
+          "legalName": "Acme Holdings Ltd.",
+          "registrationNumber": "RC-1234567",
+          "street": "1 Plaza Fintech",
+          "city": "Dubái",
+          "stateProvince": "Emirato de Dubái",
+          "postalCode": "00000",
+          "uboFirstName": "Juana",
+          "uboLastName": "Pérez",
+          "uboAddress": "123 Calle Principal, Londres, Reino Unido"
+        }
+      }
+    },
+    "Rejected": {
+      "title": "No se pudo completar la verificación",
+      "subtitle": "Tu envío no superó nuestras comprobaciones.",
+      "body": "Puede ocurrir cuando la información o los documentos no cumplen los requisitos. Puedes iniciar un nuevo envío desde Mi cuenta, o escribir a soporte con los datos de tu espacio de trabajo.",
+      "hint": "Ten a mano el nombre de tu espacio de trabajo al contactar a soporte.",
+      "ctaSettings": "Ajustes del espacio de trabajo",
+      "ctaSupport": "Contactar soporte"
+    },
+    "Pending": {
+      "documentsSubmitted": "Documentos enviados",
+      "queueId": "Referencia",
+      "expectedTime": "Plazo habitual",
+      "expectedTimeValue": "El mismo día hábil en la mayoría de los casos",
+      "needUpdate": "¿Necesitas corregir algo?",
+      "updateDesc": "Si subiste el archivo equivocado, contacta a soporte de inmediato; no envíes perfiles duplicados.",
+      "progressTitle": "Estado",
+      "contactSupport": "Contactar soporte",
+      "securityTitle": "Seguridad",
+      "securityDesc": "Tus datos se cifran en tránsito y en reposo con controles estándar del sector.",
+      "phase": {
+        "PENDING": {
+          "title": "Verificación recibida",
+          "subtitle": "Tu envío está en cola.",
+          "headline": "Tenemos tus documentos",
+          "body": "Verás actualizaciones aquí mientras avanzamos por la revisión previa y la activación final. La mayoría termina en un día hábil."
+        },
+        "PROCESSING": {
+          "title": "Revisión previa",
+          "subtitle": "Comprobaciones rápidas de documentos e identidad.",
+          "headline": "Revisión en curso",
+          "body": "Este paso filtra incidencias obvias antes de la configuración bancaria. No necesitas hacer nada salvo que te contactemos."
+        },
+        "SHUFTI_APPROVED": {
+          "title": "Activación final",
+          "subtitle": "Conectando tu perfil con la red bancaria.",
+          "headline": "Casi listo",
+          "body": "La revisión previa pasó. Estamos completando la configuración con socios y banca para desbloquear tu panel."
+        }
+      },
+      "timeline": {
+        "step1Title": "Envío recibido",
+        "step1Desc": "Tu solicitud consta en el sistema.",
+        "step2Title": "Revisión previa",
+        "step2QueueDesc": "En espera de comprobaciones de documentos e identidad.",
+        "step2ActiveDesc": "Comprobando documentos y datos.",
+        "step2DoneDesc": "Revisión previa completada.",
+        "step3Title": "Activación final",
+        "step3WaitingDesc": "Comienza al terminar la revisión previa.",
+        "step3ActiveDesc": "Configuración bancaria y de cuenta en curso."
+      }
+    },
+    "Active": {
+      "title": "Mi Cuenta",
+      "subtitle": "Gestiona tus saldos y actividad reciente.",
+      "createInbound": "Crear Ingreso",
+      "createOutbound": "Crear Egreso",
+      "virtualAccounts": "Cuentas Virtuales",
+      "availableBalance": "Saldo Disponible",
+      "recentTransactions": "Transacciones Recientes",
+      "completed": "Completado",
+      "pending": "Pendiente",
+      "via": "vía",
+      "downloadCertificate": "Descargar Certificado de Cuenta"
+    },
+    "CertificateModal": {
+      "title": "Generar Certificado",
+      "selectCurrency": "Seleccionar Moneda",
+      "selectNetwork": "Seleccionar Red",
+      "generatePdf": "Generar PDF"
+    }
+  },
+  "Transactions": {
+    "title": "Libro de Transacciones",
+    "subtitle": "Monitorea y gestiona tus flujos transfronterizos.",
+    "filters": {
+      "status": "Estado",
+      "account": "Cuenta",
+      "dateRange": "Rango de Fechas"
+    },
+    "statuses": {
+      "completed": "Completado",
+      "processing": "Procesando",
+      "failed": "Fallido"
+    },
+    "currencySymbol": "$",
+    "table": {
+      "id": "ID",
+      "date": "Fecha",
+      "counterparty": "Contraparte",
+      "flow": "Flujo",
+      "amount": "Monto Enviado",
+      "status": "Estado",
+      "downloadReceipt": "Descargar Recibo",
+      "viewDetailsAria": "Ver detalles para {id}"
+    },
+    "detail": {
+      "back": "Volver a Transacciones",
+      "sendAmount": "Monto a Enviar",
+      "receiveAmount": "Monto a Recibir",
+      "exchangeRate": "Tasa Garantizada",
+      "feeBreakdown": "Desglose de Tarifas",
+      "networkFee": "Tarifa de Red",
+      "markup": "Margen",
+      "totalFees": "Tarifas Totales",
+      "timeline": "Línea de Tiempo en Vivo",
+      "steps": {
+        "created": "Instrucción de Pago Creada",
+        "received": "Fondos Recibidos",
+        "processing": "Procesando",
+        "delivered": "Entregado al Destinatario",
+        "processingDesc": "Enrutando a través de la red de socios..."
+      },
+      "counterpartyInfo": "Contraparte e Instrucciones",
+      "counterparty": {
+        "network": "Red",
+        "accountAddress": "Cuenta / Dirección"
+      },
+      "sendingInstructions": "Instrucciones de Envío",
+      "sendingInstructionsBody": "Por favor, envía el importe exacto a la siguiente cuenta bancaria para completar esta transacción.",
+      "sendingInstructionsLabels": {
+        "bank": "Banco",
+        "routing": "Enrutamiento",
+        "account": "Cuenta",
+        "reference": "Referencia"
+      },
+      "bankRouting": "Detalles de Enrutamiento Bancario",
+      "cryptoDeposit": "Dirección de Depósito Cripto"
+    }
+  },
+  "Counterparties": {
+    "title": "CONTRAPARTES",
+    "addBtn": "AÑADIR CONTRAPARTE",
+    "empty": {
+      "headline": "NO SE ENCONTRARON CONTRAPARTES.",
+      "subheadline": "Tu lista está vacía. Añade una contraparte para iniciar flujos transfronterizos.",
+      "cta": "Añadir tu Primera Contraparte"
+    },
+    "table": {
+      "name": "NOMBRE",
+      "type": "TIPO",
+      "country": "PAÍS",
+      "details": "DETALLES DE CUENTA",
+      "dash": "—",
+      "accountMask": "••••{last4}"
+    },
+    "actions": {
+      "edit": "Editar",
+      "delete": "Eliminar"
+    },
+    "deleteConfirm": {
+      "title": "Eliminar Contraparte",
+      "description": "¿Eliminar a {name} de tus contrapartes? Esta acción no se puede deshacer.",
+      "successToast": "{name} eliminado correctamente.",
+      "errorToast": "No se pudo eliminar la contraparte."
+    },
+    "modal": {
+      "title": "Registro de Cliente",
+      "description": "Por favor, proporciona los detalles básicos de tu empresa y la cuenta bancaria que se utilizará para enviar o recibir fondos. Esta información se almacena de forma segura y se utiliza solo para la incorporación, verificación de cumplimiento y procesamiento de transacciones.",
+      "steps": {
+        "business": "Detalles de la Empresa",
+        "bank": "Detalles Bancarios",
+        "contact": "Info de Contacto"
+      },
+      "fields": {
+        "businessName": "Nombre de la Empresa",
+        "jurisdiction": "Jurisdicción",
+        "selectJurisdiction": "Selecciona una Jurisdicción",
+        "registrationNumber": "Número de Registro de la Empresa",
+        "businessAddress": "Dirección de la Empresa",
+        "businessNamePlaceholder": "Acme Corp LLC",
+        "registrationNumberPlaceholder": "123456789",
+        "businessAddressPlaceholder": "123 Main St, London EC1A 1BB",
+        "website": "Sitio Web de la Empresa",
+        "websitePlaceholder": "https://acmecorp.com",
+        "bankName": "Nombre del Banco",
+        "selectBank": "Selecciona un Banco",
+        "bankAddress": "Dirección del Banco",
+        "bankNamePlaceholder": "Barclays",
+        "bankAddressPlaceholder": "1 Churchill Place, London E14 5HP",
+        "beneficiary": "Nombre del Beneficiario de la Cuenta",
+        "beneficiaryPlaceholder": "Acme Corp LLC",
+        "accountNumber": "Número de Cuenta",
+        "accountNumberPlaceholder": "8829100293",
+        "routingNumber": "Número de Ruta (Routing)",
+        "routingNumberPlaceholder": "021000021",
+        "swift": "Código Swift (Si aplica)",
+        "swiftPlaceholder": "BARCGB22",
+        "phone": "Número de Teléfono",
+        "phonePlaceholder": "+44 7911 123456",
+        "email": "Correo Electrónico",
+        "emailPlaceholder": "finance@acmecorp.com",
+        "euroWarning": "Este campo es obligatorio si planeas enviar o recibir Euros.",
+        "optional": "Opcional"
+      },
+      "actions": {
+        "back": "Atrás",
+        "next": "Siguiente Paso",
+        "submit": "Completar Registro",
+        "submitting": "Guardando…"
+      },
+      "successToast": "Contraparte añadida correctamente.",
+      "errorToast": "No se pudo añadir la contraparte."
+    }
+  },
+  "Dashboard": {
+    "banner": {
+      "unverifiedTitle": "Acción requerida: verifica tu identidad para desbloquear transferencias",
+      "unverifiedCta": "Completar verificación",
+      "inFlightCta": "Ver estado",
+      "rejectedTitle": "No se pudo completar la verificación",
+      "rejectedSubtitle": "Abre Mi cuenta para ver los siguientes pasos o contacta a soporte.",
+      "rejectedCta": "Revisar cuenta",
+      "phase": {
+        "PENDING": {
+          "title": "Verificación recibida",
+          "subtitle": "Tu envío está en cola para revisión."
+        },
+        "PROCESSING": {
+          "title": "Revisión previa en curso",
+          "subtitle": "Estamos revisando tus documentos y datos."
+        },
+        "SHUFTI_APPROVED": {
+          "title": "Activación final",
+          "subtitle": "Las comprobaciones de identidad pasaron. Estamos terminando la configuración bancaria."
+        }
+      }
+    },
+    "analytics": {
+      "topContacts": "Contactos Principales por Volumen",
+      "volumeSplit": "Distribución de Volumen",
+      "sendMoney": "Enviar Dinero"
+    },
+    "recentTransactions": {
+      "title": "Transacciones Recientes",
+      "viewAll": "Ver Todas",
+      "viewDetailsAria": "Ver detalles para {id}"
+    },
+    "education": {
+      "badge": "Educación",
+      "title": "Cómo evitar RFIs y retrasos en pagos",
+      "description": "Aprende las mejores prácticas para estructurar tus pagos transfronterizos y asegurar que pasen los controles de cumplimiento al instante.",
+      "readGuide": "Leer Guía"
+    }
+  },
+  "Settings": {
+    "title": "Configuración",
+    "pageDescription": "Gestiona tu perfil, seguridad, equipo y preferencias.",
+    "tabs": {
+      "profile": "Perfil",
+      "security": "Seguridad",
+      "team": "Equipo",
+      "preferences": "Preferencias"
+    },
+    "profile": {
+      "personalDetails": "Detalles Personales",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo de Superadmin",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "+44 7911 123456",
+      "companyDetails": "Detalles de la Empresa",
+      "businessName": "Nombre Legal de la Empresa",
+      "registrationNumber": "Número de Registro",
+      "address": "Dirección Operativa",
+      "companyNote": "Los detalles de la empresa son administrados por el administrador de tu organización.",
+      "save": "Guardar Cambios",
+      "saving": "Guardando…",
+      "saveSuccess": "Perfil actualizado correctamente.",
+      "saveError": "No se pudo guardar el perfil."
+    },
+    "security": {
+      "twoFactorTitle": "Autenticación de Dos Factores (2FA)",
+      "twoFactorDesc": "Asegura tus retiros e invitaciones de equipo con una capa adicional de seguridad.",
+      "configureApp": "Configurar App de Autenticación",
+      "enabled": "Activado",
+      "disabled": "Desactivado"
+    },
+    "team": {
+      "title": "Gestión de Equipo",
+      "inviteBtn": "Invitar Miembro del Equipo",
+      "roles": {
+        "admin": "Admin",
+        "preparer": "Preparador"
+      },
+      "rolesInfo": {
+        "title": "Permisos de Roles",
+        "admin": "Admin: Acceso completo, puede ejecutar y aprobar transacciones.",
+        "preparer": "Preparador: Puede redactar e iniciar transacciones, pero requiere aprobación de Admin para ejecutar."
+      },
+      "pending": {
+        "title": "Invitaciones pendientes",
+        "count": "{count} pendientes",
+        "empty": "No hay invitaciones pendientes.",
+        "revoke": "Revocar",
+        "table": {
+          "email": "Correo",
+          "role": "Rol",
+          "dateInvited": "Fecha de invitación",
+          "actions": "Acciones"
+        },
+        "toasts": {
+          "revokeSuccess": "Invitación revocada",
+          "revokeError": "No se pudo revocar la invitación"
+        }
+      },
+      "table": {
+        "name": "Nombre",
+        "email": "Correo",
+        "role": "Rol",
+        "status": "Estado",
+        "active": "Activo"
+      },
+      "modal": {
+        "title": "Invitar Miembro del Equipo",
+        "email": "Dirección de Correo",
+        "emailPlaceholder": "colega@empresa.com",
+        "role": "Seleccionar Rol",
+        "roles": {
+          "admin": "Admin",
+          "preparer": "Preparador"
+        },
+        "sendInvite": "Enviar Invitación",
+        "sending": "Enviando…",
+        "successToast": "Invitación enviada.",
+        "successToastDesc": "Recibirán un correo para unirse a tu espacio de trabajo.",
+        "errorToast": "No se pudo enviar la invitación."
+      }
+    },
+    "teamDirectory": {
+      "title": "Miembros del equipo",
+      "empty": "Aún no hay miembros en el equipo.",
+      "loadError": "No se pudo cargar el directorio del equipo.",
+      "roles": {
+        "admin": "Administrador",
+        "preparer": "Preparador",
+        "viewer": "Lector"
+      }
+    },
+    "preferences": {
+      "newsletter": {
+        "badge": "Boletín",
+        "title": "Boletín Insider de Bumerang",
+        "desc": "Únete a nuestro boletín para actualizaciones sobre cómo evitar RFIs y optimizar flujos transfronterizos.",
+        "subscribe": "Suscribirse al Boletín"
+      },
+      "notifications": {
+        "title": "Notificaciones por Correo",
+        "desc": "Recibe actualizaciones sobre la actividad de tu cuenta y transacciones."
+      }
+    },
+    "workspace": {
+      "title": "Espacio de trabajo",
+      "backToSettings": "Volver a ajustes",
+      "manageLink": "Gestionar espacio de trabajo",
+      "pageTitle": "Gestión del espacio de trabajo",
+      "pageSubtitle": "Nombre visible, membresía y acciones destructivas del espacio de trabajo activo.",
+      "generalTitle": "General",
+      "generalDescription": "Cambia cómo aparece este espacio de trabajo en la app.",
+      "displayNameLabel": "Nombre visible del espacio de trabajo",
+      "displayNameHint": "Este es el nombre visible. No modifica el nombre legal de la entidad usado para cumplimiento (en tu perfil KYC).",
+      "saveName": "Guardar nombre visible",
+      "savingName": "Guardando…",
+      "nameSuccessToast": "Nombre del espacio de trabajo actualizado.",
+      "nameErrorToast": "No se pudo actualizar el nombre",
+      "nameNotAdminToast": "Solo los administradores pueden cambiar el nombre visible.",
+      "adminOnlyName": "Solo los administradores del espacio pueden editar el nombre visible.",
+      "dangerTitle": "Zona de peligro",
+      "dangerDescription": "Salir o eliminar afecta a todos en este espacio de trabajo.",
+      "leaveTitle": "Salir del espacio de trabajo",
+      "leaveHint": "Perderás el acceso. La organización y sus datos permanecen con los demás miembros.",
+      "leaveDisabledSole": "Eres el único miembro. Invita a alguien más primero, o elimina el espacio si eres administrador.",
+      "leaveAction": "Salir del espacio de trabajo",
+      "leaveConfirmTitle": "¿Salir de {name}?",
+      "leaveConfirmDescription": "Perderás el acceso de inmediato. Un administrador tendrá que invitarte de nuevo para volver.",
+      "leaveConfirmAction": "Salir",
+      "leaveSuccessToast": "Saliste de {name}.",
+      "leaveErrorToast": "No se pudo salir del espacio de trabajo",
+      "deleteTitle": "Eliminar espacio de trabajo",
+      "deleteHint": "Elimina el espacio de trabajo para todos. Esta acción no se puede deshacer.",
+      "deleteAdminOnly": "Solo los administradores del espacio de trabajo pueden eliminarlo.",
+      "deleteAction": "Eliminar espacio de trabajo",
+      "deleteConfirmTitle": "¿Eliminar {name}?",
+      "deleteConfirmDescription": "Todos los miembros perderán el acceso y se eliminarán los datos relacionados. No se puede deshacer.",
+      "deleteConfirmAction": "Eliminar permanentemente",
+      "deleteSuccessToast": "El espacio de trabajo \"{name}\" fue eliminado.",
+      "deleteErrorToast": "No se pudo eliminar el espacio de trabajo",
+      "deleteNotAdminToast": "Solo los administradores pueden eliminar este espacio de trabajo.",
+      "activeOrgNote": "Este es tu espacio de trabajo activo. Tras salir o eliminar, cambiaremos a otro si tienes uno.",
+      "membersLabel": "{count, plural, one {# miembro} other {# miembros}}"
+    }
+  }
+}

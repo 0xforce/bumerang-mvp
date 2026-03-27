@@ -1,0 +1,140 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ─────────────────────────────────────────────
+   Sculpted Geometry Design Tokens
+   ───────────────────────────────────────────── */
+:root {
+  /* Brand palette */
+  --color-orange: #f94212;
+  --color-ink: #0a0a0a;
+  --color-slate: #64748b;
+  --color-surface: #f8f9fa;
+  --color-white: #ffffff;
+
+  /* Shadcn semantic tokens mapped to brand */
+  --background: #f8f9fa;
+  --foreground: #0a0a0a;
+  --card: #ffffff;
+  --card-foreground: #0a0a0a;
+  --popover: #ffffff;
+  --popover-foreground: #0a0a0a;
+  --primary: #f94212;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0a0a0a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f8f9fa;
+  --accent-foreground: #0a0a0a;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: rgba(0, 0, 0, 0.05);
+  --input: #f8f9fa;
+  --ring: #f94212;
+  --radius: 1rem;
+  --badge-success-bg: #eaf8ef;
+  --badge-success-fg: #15803d;
+  --badge-processing-bg: #fff7e6;
+  --badge-processing-fg: #b45309;
+  --badge-failed-bg: #fdecec;
+  --badge-failed-fg: #b91c1c;
+
+  /* Chart tokens */
+  --chart-1: oklch(0.809 0.105 251.813);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.546 0.245 262.881);
+  --chart-4: oklch(0.488 0.243 264.376);
+  --chart-5: oklch(0.424 0.199 265.638);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #f8f9fa;
+  --card: #111111;
+  --card-foreground: #f8f9fa;
+  --popover: #111111;
+  --popover-foreground: #f8f9fa;
+  --primary: #f94212;
+  --primary-foreground: #ffffff;
+  --secondary: #1f1f1f;
+  --secondary-foreground: #f8f9fa;
+  --muted: #1f1f1f;
+  --muted-foreground: #64748b;
+  --accent: #1a1a1a;
+  --accent-foreground: #f8f9fa;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgba(255, 255, 255, 0.05);
+  --input: #1a1a1a;
+  --ring: #f94212;
+  --badge-success-bg: #10301d;
+  --badge-success-fg: #4ade80;
+  --badge-processing-bg: #3a2a10;
+  --badge-processing-fg: #fbbf24;
+  --badge-failed-bg: #3b1115;
+  --badge-failed-fg: #f87171;
+}
+
+@theme inline {
+  /* Font stacks */
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  /* Brand colors exposed as Tailwind utilities */
+  --color-orange: var(--color-orange);
+  --color-ink: var(--color-ink);
+  --color-slate: var(--color-slate);
+  --color-surface: var(--color-surface);
+
+  /* Shadcn semantic colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Radius scale */
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.5);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-full: 9999px;
+
+  /* Custom ambient shadow — the ONLY shadow used for floating elements */
+  --shadow-ambient: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  * {
+    @apply outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  button,
+  [role="button"] {
+    @apply cursor-pointer;
+  }
+}

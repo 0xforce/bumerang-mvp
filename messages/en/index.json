@@ -1,0 +1,813 @@
+{
+  "WorkspaceSetup": {
+    "brand": "Bumerang",
+    "title": "Launch Your Workspace",
+    "subtitle": "Set up your account to start sending cross-border payments.",
+    "entityType": "I am a...",
+    "individual": "Individual",
+    "business": "Business",
+    "name": "Workspace Name",
+    "namePlaceholder": "Acme Holdings Ltd.",
+    "cta": "Launch Workspace",
+    "creating": "Creating…",
+    "successToast": "Workspace created. Welcome aboard.",
+    "errorToast": "Could not create workspace.",
+    "errors": {
+      "tooShort": "Name must be at least 2 characters"
+    }
+  },
+  "Common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "areYouSure": "Are you sure?",
+    "actionIrreversible": "This action cannot be undone."
+  },
+  "AdminPortal": {
+    "compliance": {
+      "title": "Compliance Desk",
+      "subtitle": "Review and manage KYC/KYB submissions.",
+      "empty": "No profiles found.",
+      "unknownOrganization": "Unknown",
+      "review": "Review",
+      "forceApprove": "Force Approve",
+      "forceReject": "Force Reject",
+      "table": {
+        "organization": "Organization",
+        "status": "Status",
+        "lastUpdated": "Last Updated",
+        "action": "Action"
+      },
+      "sheet": {
+        "description": "Review compliance data and make a final decision.",
+        "currentStatus": "Current Status:",
+        "rawPayload": "Raw Payload",
+        "noRawPayload": "No raw payload available.",
+        "rejectionReasons": "Rejection Reasons",
+        "none": "None"
+      },
+      "filters": {
+        "ALL": "ALL",
+        "PENDING": "PENDING",
+        "PROCESSING": "PROCESSING",
+        "MANUAL_REVIEW": "MANUAL_REVIEW",
+        "ERROR": "ERROR",
+        "APPROVED": "APPROVED",
+        "REJECTED": "REJECTED"
+      },
+      "statuses": {
+        "PENDING": "PENDING",
+        "PROCESSING": "PROCESSING",
+        "MANUAL_REVIEW": "MANUAL_REVIEW",
+        "ERROR": "ERROR",
+        "APPROVED": "APPROVED",
+        "REJECTED": "REJECTED"
+      },
+      "toasts": {
+        "approveSuccess": "Profile approved successfully",
+        "approveError": "Failed to approve",
+        "rejectSuccess": "Profile rejected successfully",
+        "rejectError": "Failed to reject"
+      }
+    },
+    "users": {
+      "title": "User access",
+      "subtitle": "One row per person. Revoke only the workspace you choose — audit history stays intact.",
+      "colEmail": "Email",
+      "colInternalRole": "Internal Role",
+      "colWorkspaces": "Workspaces",
+      "colMemberSince": "First joined",
+      "userCount": "{count, plural, one {# user} other {# users}}",
+      "joined": "Joined {date}",
+      "revokeAria": "Revoke access to {organization}",
+      "revokeTitle": "Revoke workspace access",
+      "revokeDescription": "Remove {email} from {organization}? They lose access to that workspace only; ledger history is preserved.",
+      "searchPlaceholder": "Filter by email…",
+      "emptyFilter": "No users match this filter.",
+      "emptyAll": "No workspace memberships found.",
+      "copyEmail": "Copy email",
+      "copied": "Copied",
+      "revoke": "Revoke",
+      "revoking": "Revoking…",
+      "revokeSuccess": "Workspace access removed",
+      "roleUpdated": "Internal role updated",
+      "actionFailed": "Action failed",
+      "selectRole": "Select role",
+      "roles": {
+        "customer": "customer",
+        "support": "support",
+        "operations": "operations",
+        "compliance": "compliance",
+        "super_admin": "super admin"
+      }
+    },
+    "system": {
+      "title": "System Health",
+      "subtitle": "Monitor delivery failures and high-level system events.",
+      "tabs": {
+        "failures": "Delivery Failures",
+        "events": "System Events"
+      },
+      "failures": {
+        "empty": "No failed deliveries.",
+        "unknownError": "Unknown error",
+        "never": "Never",
+        "retry": "Retry",
+        "table": {
+          "channel": "Channel",
+          "destination": "Destination",
+          "error": "Error",
+          "lastAttempt": "Last Attempt",
+          "action": "Action"
+        }
+      },
+      "events": {
+        "empty": "No system events found.",
+        "system": "System",
+        "table": {
+          "eventType": "Event Type",
+          "organizationId": "Organization ID",
+          "createdAt": "Created At"
+        }
+      },
+      "toasts": {
+        "retrySuccess": "Delivery queued for retry",
+        "retryError": "Failed to retry delivery"
+      }
+    },
+    "invites": {
+      "title": "Invite a User",
+      "subtitle": "Send a secure invite link. The recipient will set their own password.",
+      "emailPlaceholder": "colleague@company.com",
+      "sending": "Sending...",
+      "sendInvite": "Send Invite",
+      "pendingTitle": "Pending Platform Invites",
+      "pendingCount": "{count} pending",
+      "emptyPending": "No pending platform invites.",
+      "revokePlatformAccess": "Revoke Platform Access",
+      "table": {
+        "email": "Email",
+        "createdAt": "Created At",
+        "actions": "Actions"
+      },
+      "toasts": {
+        "revokeSuccess": "Platform invite revoked",
+        "revokeError": "Could not revoke platform invite"
+      }
+    },
+    "ledger": {
+      "title": "Ledger",
+      "subtitle": "Placeholder for internal ledger operations.",
+      "empty": "Ledger functionality coming soon."
+    },
+    "overview": {
+      "title": "Admin Overview",
+      "subtitle": "Blank overview page. Add widgets and metrics here next.",
+      "empty": "No overview data yet."
+    }
+  },
+  "DevTools": {
+    "testUtilities": "Test Utilities",
+    "confirmTitle": "Launch test sequence?",
+    "confirmDescription": "Confirm to fire a success toast and verify the utility stack is wired correctly.",
+    "successToast": "Utilities confirmed. Toast + modal stack is live.",
+    "successToastDescription": "Both systems are wired correctly across the app."
+  },
+  "Index": {
+    "title": "Welcome to Bumerang",
+    "cta": "Get Started"
+  },
+  "Login": {
+    "brand": "Bumerang",
+    "title": "Sign In",
+    "subtitle": "Access is by invitation only.",
+    "errorBannerTitle": "Access restricted",
+    "closedBetaNotice": "This application is currently in closed beta. Only explicitly invited email addresses are permitted to log in.",
+    "googleSignIn": "Sign in with Google",
+    "or": "or",
+    "emailPlaceholder": "Email address",
+    "passwordPlaceholder": "Password",
+    "forgotPassword": "Forgot password?",
+    "signingIn": "Signing in…",
+    "signIn": "Sign In"
+  },
+  "ResetPassword": {
+    "brand": "Bumerang",
+    "title": "Reset Password",
+    "subtitle": "Enter your email and we'll send a reset link.",
+    "backToSignIn": "Back to sign in",
+    "emailPlaceholder": "Email address",
+    "sending": "Sending…",
+    "sendResetLink": "Send Reset Link"
+  },
+  "UpdatePassword": {
+    "brand": "Bumerang",
+    "title": "Set Password",
+    "subtitle": "Choose a strong password for your account.",
+    "newPasswordPlaceholder": "New password (min. 8 chars)",
+    "confirmPasswordPlaceholder": "Confirm password",
+    "saving": "Saving…",
+    "setPasswordAndContinue": "Set Password & Continue"
+  },
+  "Nav": {
+    "dashboard": "Dashboard",
+    "account": "My Account",
+    "counterparties": "Counterparties",
+    "transactions": "Transactions",
+    "settings": "Settings",
+    "education": "Education",
+    "notifications": "Notifications",
+    "aiAssistant": "AI Assistant",
+    "toggleSidebar": "Toggle sidebar",
+    "sidebarControl": "Sidebar control",
+    "sidebarExpanded": "Expanded",
+    "sidebarCollapsed": "Collapsed",
+    "sidebarHover": "Expand on hover",
+    "adminCompliance": "Compliance",
+    "adminLedger": "Ledger",
+    "adminUsers": "Users",
+    "adminSystem": "System",
+    "adminInvites": "Invites",
+    "adminShell": "Admin",
+    "adminMenu": "Admin",
+    "shellSwitcherAria": "Switch between app and admin"
+  },
+  "Theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "toggle": "Theme"
+  },
+  "Language": {
+    "en": "English",
+    "es": "Español",
+    "toggle": "Switch language"
+  },
+  "OrgSwitcher": {
+    "searchPlaceholder": "Find organization...",
+    "noResults": "No organizations match your search.",
+    "allOrgs": "All Organizations",
+    "newOrg": "New organization",
+    "modalTitle": "Create a new workspace",
+    "modalDescription": "You will be admin of this organization.",
+    "workspaceSettings": "Workspace settings",
+    "settingsTooltip": "Settings",
+    "verification": {
+      "UNVERIFIED": "Not started",
+      "PENDING": "Received",
+      "PROCESSING": "Pre-flight review",
+      "SHUFTI_APPROVED": "Final activation",
+      "APPROVED": "Approved",
+      "REJECTED": "Needs attention"
+    }
+  },
+  "User": {
+    "signOut": "Sign out",
+    "profile": "Profile",
+    "viewProfile": "View profile"
+  },
+  "SidebarPromo": {
+    "unverifiedTitle": "Action Required",
+    "unverifiedDesc": "Complete your profile to unlock all features.",
+    "verifyNow": "Verify Now",
+    "pendingTitle": "Under Review",
+    "pendingDesc": "Your verification is in progress.",
+    "rejectedTitle": "Verification issue",
+    "rejectedDesc": "We could not complete verification. Review your account for details.",
+    "reviewAccount": "View account",
+    "verifiedTitle": "What's New",
+    "verifiedDesc": "Crypto Wallets are now live. Start transacting in USDT today."
+  },
+  "Account": {
+    "devState": "Dev State:",
+    "devReset": "Reset",
+    "Onboarding": {
+      "title": "Complete Your Profile",
+      "subtitle": "We need a few details to verify your identity and activate your account.",
+      "individual": "Individual",
+      "business": "Business",
+
+      "steps": {
+        "kyc": {
+          "step1": "Personal",
+          "step2": "Address",
+          "step3": "Identity",
+          "step4": "Documents"
+        },
+        "kyb": {
+          "step1": "Business",
+          "step2": "Address",
+          "step3": "Ownership",
+          "step4": "Documents"
+        }
+      },
+
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dob": "Date of Birth",
+      "phone": "Phone Number",
+      "phoneHint": "Include country code, e.g. +44 7911 123456",
+      "nationality": "Nationality",
+      "street": "Street Address",
+      "city": "City",
+      "stateProvince": "State / Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "documentType": "Document Type",
+      "documentNumber": "Document Number",
+      "documentCountry": "Document Country",
+
+      "passport": "Passport",
+      "nationalId": "National ID Card",
+      "driversLicense": "Driver's License",
+
+      "legalName": "Legal Business Name",
+      "entityType": "Entity Type",
+      "incorporationDate": "Date of Incorporation",
+      "registrationNumber": "Registration Number",
+      "countryOfIncorporation": "Country of Incorporation",
+
+      "llc": "LLC",
+      "ltd": "LTD",
+      "corp": "Corporation",
+      "sa": "S.A.",
+      "sas": "S.A.S.",
+      "gmbh": "GmbH",
+      "bv": "B.V.",
+      "other": "Other",
+
+      "uboSectionLabel": "Ultimate Beneficial Owner (UBO)",
+      "uboName": "Full Legal Name",
+      "uboFirstName": "UBO First Name",
+      "uboLastName": "UBO Last Name",
+      "uboDob": "Date of Birth",
+      "uboDocumentType": "UBO Document Type",
+      "uboDocumentNumber": "UBO Document Number",
+      "uboDocumentCountry": "UBO Document Country",
+      "uboNationalId": "National ID / Passport Number",
+      "uboAddress": "Residential Address",
+
+      "documents": {
+        "idFront": "Front of ID",
+        "idFrontHint": "National ID, Cédula, Passport (max. 5MB)",
+        "idBack": "Back of ID (Optional)",
+        "idBackHint": "Required for National ID / Cédula",
+        "selfie": "Selfie",
+        "selfieHint": "A clear photo of your face",
+        "poa": "Proof of Address",
+        "poaHint": "Utility Bill / Extracto Bancario / Bank Statement (max. 5MB)",
+        "incorporationDoc": "Incorporation Document",
+        "incorporationDocHint": "Certificate of Incorporation / Cámara de Comercio (max. 5MB)",
+        "uboIdFront": "UBO ID Front",
+        "uboIdFrontHint": "National ID, Cédula, Passport (max. 5MB)",
+        "uboIdBack": "UBO ID Back (Optional)",
+        "uboIdBackHint": "Required for National ID / Cédula",
+        "uboSelfie": "UBO Selfie",
+        "uboSelfieHint": "A clear photo of the UBO's face",
+        "uboPoa": "UBO Proof of Address",
+        "uboPoaHint": "Utility Bill / Extracto Bancario / Bank Statement (max. 5MB)"
+      },
+
+      "selectDate": "Select a date",
+      "selectCountry": "Select a country",
+      "selectDocumentType": "Select document type",
+      "selectEntityType": "Select entity type",
+
+      "nextStep": "Next Step",
+      "previous": "Back",
+      "submit": "Submit for Verification",
+      "submitting": "Submitting…",
+
+      "successToastTitle": "Verification Submitted",
+      "successToastDesc": "Your profile is now under review.",
+      "errorToastTitle": "Submission Failed",
+      "rejection": {
+        "actionRequired": "Action Required"
+      },
+      "placeholders": {
+        "shared": {
+          "documentNumber": "A12345678"
+        },
+        "individual": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phone": "+1 234 567 8900",
+          "street": "123 Main Street",
+          "city": "London",
+          "stateProvince": "Greater London",
+          "postalCode": "EC1A 1BB"
+        },
+        "business": {
+          "legalName": "Acme Holdings Ltd.",
+          "registrationNumber": "RC-1234567",
+          "street": "1 Fintech Square",
+          "city": "Dubai",
+          "stateProvince": "Dubai Emirate",
+          "postalCode": "00000",
+          "uboFirstName": "Jane",
+          "uboLastName": "Smith",
+          "uboAddress": "123 Main St, London, UK"
+        }
+      },
+
+      "errors": {
+        "required": "This field is required",
+        "tooShort": "Must be at least 2 characters",
+        "invalidDate": "Please enter a valid past date",
+        "futureDate": "Date cannot be in the future",
+        "usaNotPermitted": "The United States is not a supported jurisdiction",
+        "invalidPhone": "Enter a valid phone number with country code",
+        "mustBeAdult": "You must be at least 18 years old"
+      }
+    },
+    "Rejected": {
+      "title": "Verification could not be completed",
+      "subtitle": "Your submission did not pass our checks.",
+      "body": "This can happen when information or documents do not match our requirements. You can start a fresh submission from My Account, or reach out to support with your workspace details.",
+      "hint": "Have your workspace name ready when you contact support.",
+      "ctaSettings": "Workspace settings",
+      "ctaSupport": "Contact support"
+    },
+    "Pending": {
+      "documentsSubmitted": "Documents submitted",
+      "queueId": "Reference",
+      "expectedTime": "Typical turnaround",
+      "expectedTimeValue": "Same business day in most cases",
+      "needUpdate": "Need to update something?",
+      "updateDesc": "If you uploaded the wrong file by mistake, contact support right away — do not submit duplicate profiles.",
+      "progressTitle": "Where things stand",
+      "contactSupport": "Contact support",
+      "securityTitle": "Security",
+      "securityDesc": "Your data is encrypted in transit and at rest using industry-standard controls.",
+      "phase": {
+        "PENDING": {
+          "title": "Verification received",
+          "subtitle": "Your submission is in the queue.",
+          "headline": "We have your documents",
+          "body": "You will see status updates here as we move through pre-flight review and final activation. Most reviews complete within one business day."
+        },
+        "PROCESSING": {
+          "title": "Pre-flight review",
+          "subtitle": "Quick checks on documents and identity details.",
+          "headline": "Review in progress",
+          "body": "This step filters obvious issues before we spend time on banking setup. No action needed unless we contact you."
+        },
+        "SHUFTI_APPROVED": {
+          "title": "Final activation",
+          "subtitle": "Connecting your profile to banking rails.",
+          "headline": "Almost there",
+          "body": "Pre-flight checks passed. We are completing partner and banking setup so your dashboard can unlock."
+        }
+      },
+      "timeline": {
+        "step1Title": "Submission received",
+        "step1Desc": "Your application is on file.",
+        "step2Title": "Pre-flight review",
+        "step2QueueDesc": "Waiting to start document and identity checks.",
+        "step2ActiveDesc": "Checking documents and details.",
+        "step2DoneDesc": "Pre-flight review complete.",
+        "step3Title": "Final activation",
+        "step3WaitingDesc": "Starts after pre-flight completes.",
+        "step3ActiveDesc": "Banking and account provisioning in progress."
+      }
+    },
+    "Active": {
+      "title": "My Account",
+      "subtitle": "Manage your balances and recent activity.",
+      "createInbound": "Create Inbound",
+      "createOutbound": "Create Outbound",
+      "virtualAccounts": "Virtual Accounts",
+      "availableBalance": "Available Balance",
+      "recentTransactions": "Recent Transactions",
+      "completed": "Completed",
+      "pending": "Pending",
+      "via": "via",
+      "downloadCertificate": "Download Account Certificate"
+    },
+    "CertificateModal": {
+      "title": "Generate Certificate",
+      "selectCurrency": "Select Currency",
+      "selectNetwork": "Select Network",
+      "generatePdf": "Generate PDF"
+    }
+  },
+  "Transactions": {
+    "title": "Transactional Ledger",
+    "subtitle": "Monitor and manage your cross-border flows.",
+    "filters": {
+      "status": "Status",
+      "account": "Account",
+      "dateRange": "Date Range"
+    },
+    "statuses": {
+      "completed": "Completed",
+      "processing": "Processing",
+      "failed": "Failed"
+    },
+    "currencySymbol": "$",
+    "table": {
+      "id": "ID",
+      "date": "Date",
+      "counterparty": "Counterparty",
+      "flow": "Flow",
+      "amount": "Sent Amount",
+      "status": "Status",
+      "downloadReceipt": "Download Receipt",
+      "viewDetailsAria": "View details for {id}"
+    },
+    "detail": {
+      "back": "Back to Transactions",
+      "sendAmount": "Send Amount",
+      "receiveAmount": "Receive Amount",
+      "exchangeRate": "Guaranteed Rate",
+      "feeBreakdown": "Fee Breakdown",
+      "networkFee": "Network Fee",
+      "markup": "Markup",
+      "totalFees": "Total Fees",
+      "timeline": "Live Timeline",
+      "steps": {
+        "created": "Payment Instruction Created",
+        "received": "Funds Received",
+        "processing": "Processing",
+        "delivered": "Delivered to Recipient",
+        "processingDesc": "Routing through partner network..."
+      },
+      "counterpartyInfo": "Counterparty & Instructions",
+      "counterparty": {
+        "network": "Network",
+        "accountAddress": "Account / Address"
+      },
+      "sendingInstructions": "Sending Instructions",
+      "sendingInstructionsBody": "Please wire the exact amount to the following bank account to complete this transaction.",
+      "sendingInstructionsLabels": {
+        "bank": "Bank",
+        "routing": "Routing",
+        "account": "Account",
+        "reference": "Reference"
+      },
+      "bankRouting": "Bank Routing Details",
+      "cryptoDeposit": "Crypto Deposit Address"
+    }
+  },
+  "Counterparties": {
+    "title": "COUNTERPARTIES",
+    "addBtn": "ADD COUNTERPARTY",
+    "empty": {
+      "headline": "NO COUNTERPARTIES FOUND.",
+      "subheadline": "Your ledger is empty. Add a counterparty to initiate cross-border flows.",
+      "cta": "Add Your First Counterparty"
+    },
+    "table": {
+      "name": "NAME",
+      "type": "TYPE",
+      "country": "COUNTRY",
+      "details": "ACCOUNT DETAILS",
+      "dash": "—",
+      "accountMask": "••••{last4}"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Remove"
+    },
+    "deleteConfirm": {
+      "title": "Remove Counterparty",
+      "description": "Remove {name} from your counterparties? This cannot be undone.",
+      "successToast": "{name} removed successfully.",
+      "errorToast": "Could not remove counterparty."
+    },
+    "modal": {
+      "title": "Client Registration",
+      "description": "Please provide your basic business details and the bank account that will be used to send or receive funds. This information is securely stored and used only for onboarding, compliance verification, and transaction processing.",
+      "steps": {
+        "business": "Business Details",
+        "bank": "Bank Details",
+        "contact": "Contact Info"
+      },
+      "fields": {
+        "businessName": "Business Name",
+        "jurisdiction": "Jurisdiction",
+        "selectJurisdiction": "Select a Jurisdiction",
+        "registrationNumber": "Business Registration Number",
+        "businessAddress": "Business Address",
+        "businessNamePlaceholder": "Acme Corp LLC",
+        "registrationNumberPlaceholder": "123456789",
+        "businessAddressPlaceholder": "123 Main St, London EC1A 1BB",
+        "website": "Business Website",
+        "websitePlaceholder": "https://acmecorp.com",
+        "bankName": "Bank Name",
+        "selectBank": "Select a Bank",
+        "bankAddress": "Bank Address",
+        "bankNamePlaceholder": "Barclays",
+        "bankAddressPlaceholder": "1 Churchill Place, London E14 5HP",
+        "beneficiary": "Account Beneficiary Name",
+        "beneficiaryPlaceholder": "Acme Corp LLC",
+        "accountNumber": "Account Number",
+        "accountNumberPlaceholder": "8829100293",
+        "routingNumber": "Routing Number",
+        "routingNumberPlaceholder": "021000021",
+        "swift": "Swift Code (If it applies)",
+        "swiftPlaceholder": "BARCGB22",
+        "phone": "Phone Number",
+        "phonePlaceholder": "+44 7911 123456",
+        "email": "Email",
+        "emailPlaceholder": "finance@acmecorp.com",
+        "euroWarning": "This field is mandatory if you plan to send or receive Euros.",
+        "optional": "Optional"
+      },
+      "actions": {
+        "back": "Back",
+        "next": "Next Step",
+        "submit": "Complete Registration",
+        "submitting": "Saving…"
+      },
+      "successToast": "Counterparty added successfully.",
+      "errorToast": "Could not add counterparty."
+    }
+  },
+  "Dashboard": {
+    "banner": {
+      "unverifiedTitle": "Action Required: Verify your identity to unlock transfers",
+      "unverifiedCta": "Complete Verification",
+      "inFlightCta": "View status",
+      "rejectedTitle": "Verification could not be completed",
+      "rejectedSubtitle": "Open My Account to see next steps or contact support.",
+      "rejectedCta": "Review account",
+      "phase": {
+        "PENDING": {
+          "title": "Verification received",
+          "subtitle": "Your submission is queued for review."
+        },
+        "PROCESSING": {
+          "title": "Pre-flight review in progress",
+          "subtitle": "We are checking your documents and details."
+        },
+        "SHUFTI_APPROVED": {
+          "title": "Final activation",
+          "subtitle": "Identity checks passed. We are finishing banking setup."
+        }
+      }
+    },
+    "analytics": {
+      "topContacts": "Top Contacts by Volume",
+      "volumeSplit": "Volume Distribution",
+      "sendMoney": "Send Money"
+    },
+    "recentTransactions": {
+      "title": "Recent Transactions",
+      "viewAll": "View All",
+      "viewDetailsAria": "View details for {id}"
+    },
+    "education": {
+      "badge": "Education",
+      "title": "How to avoid RFIs and payment delays",
+      "description": "Learn the best practices for structuring your cross-border payments to ensure they clear compliance checks instantly.",
+      "readGuide": "Read Guide"
+    }
+  },
+  "Settings": {
+    "title": "Settings",
+    "pageDescription": "Manage your profile, security, team, and preferences.",
+    "tabs": {
+      "profile": "Profile",
+      "security": "Security",
+      "team": "Team",
+      "preferences": "Preferences"
+    },
+    "profile": {
+      "personalDetails": "Personal Details",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Superadmin Email",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+44 7911 123456",
+      "companyDetails": "Company Details",
+      "businessName": "Legal Business Name",
+      "registrationNumber": "Registration Number",
+      "address": "Operating Address",
+      "companyNote": "Company details are managed by your organization administrator.",
+      "save": "Save Changes",
+      "saving": "Saving…",
+      "saveSuccess": "Profile updated successfully.",
+      "saveError": "Could not save profile."
+    },
+    "security": {
+      "twoFactorTitle": "Two-Factor Authentication (2FA)",
+      "twoFactorDesc": "Secure your withdrawals and team invites with an additional layer of security.",
+      "configureApp": "Configure Authenticator App",
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    },
+    "team": {
+      "title": "Team Management",
+      "inviteBtn": "Invite Team Member",
+      "roles": {
+        "admin": "Admin",
+        "preparer": "Preparer"
+      },
+      "rolesInfo": {
+        "title": "Role Permissions",
+        "admin": "Admin: Full access, can execute and approve transactions.",
+        "preparer": "Preparer: Can draft and initiate transactions, but requires Admin approval to execute."
+      },
+      "pending": {
+        "title": "Pending Invitations",
+        "count": "{count} pending",
+        "empty": "No pending invitations.",
+        "revoke": "Revoke",
+        "table": {
+          "email": "Email",
+          "role": "Role",
+          "dateInvited": "Date invited",
+          "actions": "Actions"
+        },
+        "toasts": {
+          "revokeSuccess": "Invitation revoked",
+          "revokeError": "Could not revoke invitation"
+        }
+      },
+      "table": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "active": "Active"
+      },
+      "modal": {
+        "title": "Invite Team Member",
+        "email": "Email Address",
+        "emailPlaceholder": "colleague@company.com",
+        "role": "Select Role",
+        "roles": {
+          "admin": "Admin",
+          "preparer": "Preparer"
+        },
+        "sendInvite": "Send Invite",
+        "sending": "Sending…",
+        "successToast": "Invite sent.",
+        "successToastDesc": "They will receive an email to join your workspace.",
+        "errorToast": "Could not send invite."
+      }
+    },
+    "teamDirectory": {
+      "title": "Team Members",
+      "empty": "No team members yet.",
+      "loadError": "Could not load the team directory.",
+      "roles": {
+        "admin": "Admin",
+        "preparer": "Preparer",
+        "viewer": "Viewer"
+      }
+    },
+    "preferences": {
+      "newsletter": {
+        "badge": "Newsletter",
+        "title": "Bumerang Insider Newsletter",
+        "desc": "Join our newsletter for updates on avoiding RFIs and optimizing cross-border flows.",
+        "subscribe": "Subscribe to Newsletter"
+      },
+      "notifications": {
+        "title": "Email Notifications",
+        "desc": "Receive updates about your account activity and transactions."
+      }
+    },
+    "workspace": {
+      "title": "Workspace",
+      "backToSettings": "Back to settings",
+      "manageLink": "Manage workspace",
+      "pageTitle": "Workspace management",
+      "pageSubtitle": "Display name, membership, and destructive actions for the active workspace.",
+      "generalTitle": "General",
+      "generalDescription": "Update how this workspace appears in the app.",
+      "displayNameLabel": "Workspace display name",
+      "displayNameHint": "This is your display name. It does not change your legal entity name used for compliance (stored in your KYC profile).",
+      "saveName": "Save display name",
+      "savingName": "Saving…",
+      "nameSuccessToast": "Workspace name updated.",
+      "nameErrorToast": "Could not update name",
+      "nameNotAdminToast": "Only admins can change the workspace display name.",
+      "adminOnlyName": "Only workspace admins can edit the display name.",
+      "dangerTitle": "Danger zone",
+      "dangerDescription": "Leaving or deleting affects everyone in this workspace.",
+      "leaveTitle": "Leave workspace",
+      "leaveHint": "You will lose access. The organization and its data stay with remaining members.",
+      "leaveDisabledSole": "You are the only member. Invite someone else first, or delete the workspace if you are an admin.",
+      "leaveAction": "Leave workspace",
+      "leaveConfirmTitle": "Leave {name}?",
+      "leaveConfirmDescription": "You will lose access immediately. An admin must invite you again to return.",
+      "leaveConfirmAction": "Leave",
+      "leaveSuccessToast": "You left {name}.",
+      "leaveErrorToast": "Could not leave workspace",
+      "deleteTitle": "Delete workspace",
+      "deleteHint": "Permanently removes the workspace for everyone. This cannot be undone.",
+      "deleteAdminOnly": "Only workspace admins can delete.",
+      "deleteAction": "Delete workspace",
+      "deleteConfirmTitle": "Delete {name}?",
+      "deleteConfirmDescription": "All members lose access and related data is removed. This cannot be undone.",
+      "deleteConfirmAction": "Delete permanently",
+      "deleteSuccessToast": "Workspace \"{name}\" was deleted.",
+      "deleteErrorToast": "Could not delete workspace",
+      "deleteNotAdminToast": "Only admins can delete this workspace.",
+      "activeOrgNote": "This is your active workspace. After leaving or deleting, we will switch you to another workspace if you have one.",
+      "membersLabel": "{count, plural, one {# member} other {# members}}"
+    }
+  }
+}
