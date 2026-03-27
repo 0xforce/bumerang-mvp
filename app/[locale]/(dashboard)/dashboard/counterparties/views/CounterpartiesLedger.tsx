@@ -14,10 +14,10 @@ import {
 import { Button } from "@/components/ui/button"
 import { useConfirm } from "@/hooks/use-confirm"
 import { deleteCounterparty } from "@/actions/counterparties"
-import type { Recipient } from "@/lib/validations/counterparties"
+import type { Counterparty } from "@/lib/validations/counterparties"
 
 interface CounterpartiesLedgerProps {
-  data: Recipient[]
+  data: Counterparty[]
   organizationId: string
 }
 
@@ -26,21 +26,21 @@ export function CounterpartiesLedger({ data, organizationId }: CounterpartiesLed
   const confirm = useConfirm()
   const [deletingId, setDeletingId] = React.useState<string | null>(null)
 
-  const handleDelete = async (recipient: Recipient) => {
+  const handleDelete = async (counterparty: Counterparty) => {
     const confirmed = await confirm({
       title: t("deleteConfirm.title"),
-      description: t("deleteConfirm.description", { name: recipient.name }),
+      description: t("deleteConfirm.description", { name: counterparty.name }),
       confirmText: t("actions.delete"),
       variant: "destructive",
     })
     if (!confirmed) return
 
-    setDeletingId(recipient.id)
-    const result = await deleteCounterparty(recipient.id, organizationId)
+    setDeletingId(counterparty.id)
+    const result = await deleteCounterparty(counterparty.id, organizationId)
     setDeletingId(null)
 
     if (result.success) {
-      toast.success(t("deleteConfirm.successToast", { name: recipient.name }))
+      toast.success(t("deleteConfirm.successToast", { name: counterparty.name }))
     } else {
       toast.error(t("deleteConfirm.errorToast"), { description: result.error })
     }
