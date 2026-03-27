@@ -41,7 +41,7 @@ export function AccountPageClient({
     router.refresh()
   }, [router])
 
-  const showDevPanel = process.env.NODE_ENV === "development"
+  const showDevPanel = true // TODO: Quitar después de la presentación
 
   const main = (() => {
     if (isVerificationApproved(verificationStatus)) {
